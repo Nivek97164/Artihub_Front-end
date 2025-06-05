@@ -20,7 +20,7 @@ export default function LoginPage() {
     }
 
     try {
-      const response = await fetch("http://localhost:8000/auth/login.php", {
+      const response = await fetch("https://artihubback-end-production.up.railway.app/auth/login.php", {
         method: "POST",
         credentials: "include",
         headers: { "Content-Type": "application/json" },
