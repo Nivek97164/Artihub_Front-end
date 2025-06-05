@@ -48,7 +48,9 @@ const Footer = () => (
             <FaInstagram />
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com/company/artihub/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-white text-[#7d1524] rounded-full p-2 shadow-md text-xl hover:scale-110 transition"
           >
             <FaLinkedinIn />
