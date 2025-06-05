@@ -25,9 +25,9 @@ export default function LoginPage() {
         credentials: "include",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          email: emailOrPhone,
+          [emailOrPhone.includes("@") ? "email" : "phone"]: emailOrPhone,
           password,
-          role, // Ajouté !
+          role,
         }),
       });
 
