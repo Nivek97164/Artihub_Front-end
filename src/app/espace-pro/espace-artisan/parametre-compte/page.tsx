@@ -17,7 +17,7 @@ export default function ParametresCompte() {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const response = await fetch("https://artihubback-end-production.up.railway.app/auth/me.php", {
+        const response = await fetch("https://www.artihub.fr/auth/me.php", {
           method: "GET",
           credentials: "include",
         });

@@ -10,7 +10,7 @@ export default function EspaceArtisanIndexPage() {
   // Fonction de logout
   const handleLogout = async () => {
     try {
-      await fetch("https://artihubback-end-production.up.railway.app/auth/logout.php", {
+      await fetch("https://www.artihub.fr/auth/logout.php", {
         method: "POST",
         credentials: "include",
       });
