@@ -61,7 +61,7 @@ export default function EspaceParticulierCompte() {
   // Logout
   const handleLogout = async () => {
     try {
-      await fetch("http://https://artihubback-end-production.up.railway.app/auth/logout.php", {
+      await fetch("https://artihubback-end-production.up.railway.app/auth/logout.php", {
         method: "GET",
         credentials: "include",
       });

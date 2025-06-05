@@ -1,6 +1,6 @@
 // src/utils/logout.ts
 export async function logout(router: any) {
-  await fetch("http://https://artihubback-end-production.up.railway.app/auth/logout.php", {
+  await fetch("https://artihubback-end-production.up.railway.app/auth/logout.php", {
     method: "GET",
     credentials: "include",
   });
