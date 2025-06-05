@@ -11,7 +11,7 @@ export default function EspaceArtisanIndexPage() {
   const handleLogout = async () => {
     try {
       await fetch("https://artihubback-end-production.up.railway.app/auth/logout.php", {
-        method: "POST",
+        method: "GET",
         credentials: "include",
       });
       router.push("/espace-pro/login");

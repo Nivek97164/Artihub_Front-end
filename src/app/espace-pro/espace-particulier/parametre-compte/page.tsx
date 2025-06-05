@@ -62,7 +62,7 @@ export default function EspaceParticulierCompte() {
   const handleLogout = async () => {
     try {
       await fetch("http://https://artihubback-end-production.up.railway.app/auth/logout.php", {
-        method: "POST",
+        method: "GET",
         credentials: "include",
       });
       router.push("/espace-pro/login");
