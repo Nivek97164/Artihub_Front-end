@@ -17,17 +17,15 @@ export default function Page() {
     acceptGeo: false,
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
-    let newValue = value;
-    if (name === "telephone") {
-      newValue = value.replace(/[^0-9]/g, "").slice(0, 10);
-    }
-    setForm((prev) => ({
-      ...prev,
-      [name]: newValue,
-    }));
-  };
+const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const { name, value, type, checked } = e.target;
+  const newValue = type === "checkbox" ? checked : value;
+
+  setForm((prev) => ({
+    ...prev,
+    [name]: newValue,
+  }));
+};
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
