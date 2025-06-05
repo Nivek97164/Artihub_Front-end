@@ -36,7 +36,7 @@ export default function EspaceProPage() {
   useEffect(() => {
     async function checkAuth() {
       try {
-        const res = await fetch("https://www.artihub.fr/auth/me.php", {
+        const res = await fetch("https://artihubback-end-production.up.railway.app/auth/me.php", {
           credentials: "include",
         });
         if (res.ok) {

@@ -19,7 +19,7 @@ export default function EspaceParticulierCompte() {
     async function fetchUserData() {
       try {
         console.log("Appel à /auth/me.php...");
-        const response = await fetch("https://www.artihub.fr/auth/me.php", {
+        const response = await fetch("https://artihubback-end-production.up.railway.app/auth/me.php", {
           method: "GET",
           credentials: "include", // Important pour le cookie PHPSESSID !
         });
@@ -61,7 +61,7 @@ export default function EspaceParticulierCompte() {
   // Logout
   const handleLogout = async () => {
     try {
-      await fetch("http://https://www.artihub.fr/auth/logout.php", {
+      await fetch("http://https://artihubback-end-production.up.railway.app/auth/logout.php", {
         method: "POST",
         credentials: "include",
       });

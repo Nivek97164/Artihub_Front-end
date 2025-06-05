@@ -40,7 +40,7 @@ export default function MesRealisationsArtisan() {
   // Fonction de logout
   const handleLogout = async () => {
     try {
-      await fetch("https://www.artihub.fr/auth/logout.php", {
+      await fetch("https://artihubback-end-production.up.railway.app/auth/logout.php", {
         method: "POST",
         credentials: "include",
       });
