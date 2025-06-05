@@ -56,7 +56,7 @@ export default function Page() {
     console.log("Payload envoyé :", payload);
 
     try {
-      const response = await fetch("https://artihubback-end-production.up.railway.app//auth/register.php", {
+      const response = await fetch("https://artihubback-end-production.up.railway.app/auth/register.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
